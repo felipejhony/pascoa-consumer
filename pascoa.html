@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Carregando...</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+
+            background-image: url('https://static.vecteezy.com/system/resources/previews/004/664/231/non_2x/easter-holiday-background-photo.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            height: 100vh;
+        }
+
+        #titulo,
+        #resultado {
+            margin: 10px;
+        }
+
+        #titulo {
+            font-size: 4.5rem;
+            font-weight: bold;
+            color: #f8f8f8;
+            text-shadow:
+                -1px -1px 0 black,
+                1px -1px 0 black,
+                -1px 1px 0 black,
+                1px 1px 0 black;
+            font-family: 'Quicksand', sans-serif;
+
+        }
+
+        #resultado {
+            font-size: 1.5rem;
+            color: #555;
+            font-weight: bold;
+            background-color: #f8f8f8;
+            padding: 10px;
+            border-radius: 5px;
+            word-wrap: break-word;
+
+            opacity: 0;
+            transform: scale(0.3) rotate(180deg);
+            transition: all 1s ease;
+        }
+
+        #resultado.mostrar {
+            opacity: 1;
+            transform: scale(1) rotate(0deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="titulo">Páscoa!!</h1>
+    <pre id="resultado">Carregando dados...</pre>
+
+    <img id="gif" src="https://media2.giphy.com/media/3osxYoCkKu892JBLUc/200w.gif?cid=6c09b952rh0azzex17ezm99y57pcurbq4cnmcg9dywld5oq1&ep=v1_gifs_search&rid=200w.gif&ct=g" alt="Gif da Páscoa">
+
+    <script src="pascoa.js"></script>
+</body>
+
+</html>
